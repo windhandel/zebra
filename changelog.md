@@ -1,4 +1,28 @@
+**11.2014 (Anna)**
 
+   * New UI component tree. Add UI components directly as tree nodes  
+   * Grid cell marker mode support
+   * Own zebra custom virtual keyboard implementation 
+   * Remove "zebra.ui.Composite" interface, use "catchInput" field as boolean flag to say if component composite or as a method to say it dynamically
+   * Remove zebra.ui.CopyCutPaste interface. Use "clipCopy", "clipPaste" method to catch clipboard events
+   * Reorganized tree component
+   * Tabs setOrientation method added
+   * Singltone classes
+   * Text field performance of cursor position detection has been improved 
+   * OOP Singleton classes support
+   * Use nodejs/gulp to as deployment tool
+   * Fixes and improvements
+   * Matrix model has been extended with rows and columns insertion methods 
+   * package objects dand clasess can be described with a special "package" method
+   * remove possibility to composite UI JSON configuration 
+   * remove %root% variable from JSON BAG, use relative to loaded JSON path or absolute path  
+   * zebra sources has been moved from lib/zebra to src
+   * json bag has been updated:
+      - Use classAliases property to define short names for classes
+      - Use variables property to define variables
+      - Variables can be classes and structure
+      - loadByUrl has been removed, use "load" method instead 
+   
 **4.2014 (Luda)**
 
    * Reduce number of zebra artifact required to host zebra on a user side. To host zebra only three artifacts are required:
